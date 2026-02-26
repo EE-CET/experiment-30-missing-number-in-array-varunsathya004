@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/MissingNumber.java",
+      "run": "java -cp src MissingNumber",
+      "input": "3\n3 0 1",
+      "output": "2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Example 2",
+      "setup": "javac src/MissingNumber.java",
+      "run": "java -cp src MissingNumber",
+      "input": "2\n0 1",
+      "output": "2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Missing Zero",
+      "setup": "javac src/MissingNumber.java",
+      "run": "java -cp src MissingNumber",
+      "input": "3\n1 2 3",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Large Range (n=9)",
+      "setup": "javac src/MissingNumber.java",
+      "run": "java -cp src MissingNumber",
+      "input": "9\n9 6 4 2 3 5 7 0 1",
+      "output": "8",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
